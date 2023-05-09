@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Black+Han+Sans&family=Faster+One&family=Inter&family=Lexend+Deca:wght@600&family=Manrope&family=Nosifer&family=Orienta&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,900&family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+  
+.search{
+    position: relative;
+    height: 50px;
+}
+
+.search input{
+    background-color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    transition: width 0.3s ease;
+}
+
+.btn{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.btn:focus, .input:focus{
+    outline: none;
+}
+
+.search.active input{
+    width: 200px;
+}
+
+.search.active .btn {
+    transform: translateX(198px);
+}
